@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞马旅游</title>
+    <link rel="icon" href="./images/titile_logo.png" type="images/x-icon">
+    <link rel="stylesheet" href="./home.css">
+    <script src="./script.js"></script>
+    <script src="./js/jquery-1.10.1.js"></script><!--引入jQuery.js文件--><!--第（1）空-->
+</head>
+
+<body>
+    <div id="top" class="top"> <!-- 顶部（logo名称、搜索框、头像登录） -->
+        <a href="home.html" class="logo_name_link">
+            <div class="logo_name">
+                <img src="images/logo.jpg" alt="飞马logo" class="logo">
+                <span class="name"> 飞马旅行</span>
+            </div>
+        </a>
+        <div class="search">
+            <input type="text" class="input" placeholder="请输入目的地|景点|酒店等">
+            <input type="button" value="搜 索" class="button">
+        </div>
+        <div class="login">
+            <img src="./images/icon_personal.jpg" alt="个人图标">
+            <div class="link">
+                &nbsp;您好，请
+                <a href="#">登录</a>
+                &nbsp;|&nbsp;
+                <a href="#">注册</a>
+                !
+            </div>
+        </div>
+    </div>
+    <div class="nav"> <!-- 导航栏（首页、热门景点、旅游笔记、旅游评论、旅游视频、酒店住宿、更多） -->
+        <a href="home.html" class="homepage">首页</a>
+        <a href="#hot-spots" class="spots">热门景点</a>
+        <a href="#hotel-accommodation" class="hotel">酒店住宿</a>
+        <a href="#tickets" class="plane">机票</a>
+        <a href="#tickets" class="train">火车票</a>
+        <a href="#travel-reviews" class="reviews">旅游评论</a>
+        <a href="#travel-notes" class="notes">旅游笔记</a>
+        <a href="#perimeter" class="perimeter">游周边</a>
+        <a href="#china" class="china">游中国</a>
+        <a href="#world" class="world">游世界</a>
+        <a href="#serve" class="serve">旅行服务</a>
+        <a href="#more" class="more">更多</a>
+    </div>
+    <div class="query_carousel" id="tickets"> <!-- 查询框和轮播图 -->
+        <div class="query_box"><!-- 查询框 -->
+            <div class="list_query"><!-- 查询框左侧导航栏 -->
+                <ul>
+                    <li><a href="#spots">景点</a></li>
+                    <li><a href="#hotels">酒店</a></li>
+                    <li><a href="#flights">机票</a></li>
+                    <li><a href="#trains">火车票</a></li>
+                    <li><a href="#holiday">度假</a></li>
+                </ul>
+            </div>
+            <div class="inquire"><!-- 查询框右侧搜索框 -->
+                <div class="spots"><!-- 景点 -->
+                    <div class="title">
+                        <div class="title_spots">景点</div>
+                        <div class="title_perimeter">周边跟团游</div>
+                    </div>
+                    <input type="text" class="spots_input" placeholder="景点名或城市名">
+                    <input type="button" value="搜 索" class="spots_button">
+                    <div class="recommend1">
+                        <div class="topic">
+                            <div class="topic1">精选主题&nbsp;</div>
+                            <a href="#">自然风光</a>&nbsp;
+                            <a href="#">更多主题</a>&nbsp;
+                            <a href="#">主题乐园</a>&nbsp;
+                        </div>
+                        <div class="topic">
+                            <div class="topic2">热搜城市&nbsp;</div>
+                            <a href="#">广州</a>&nbsp;
+                            <a href="#">深圳</a>&nbsp;
+                            <a href="#">连州</a>&nbsp;
+                            <a href="#">珠海</a>&nbsp;
+                            <a href="#">中山</a>&nbsp;
+                            <a href="#">佛山</a>&nbsp;
+                            <a href="#">东莞</a>&nbsp;
+                            <a href="#">更多</a><img src="./images/icon_arrows.png" alt="" class="arrows">
+                        </div>
+                        <div class="topic">
+                            <div class="topic3">热门活动&nbsp;</div>
+                            <a href="#">克拉玛依文旅旗舰馆</a>
+                        </div>
+                    </div>
+                    <div class="recommend2">
+                        <div class="topic">
+                            <div class="topic1">热搜城市&nbsp;</div>
+                            <a href="#">广州</a>&nbsp;
+                            <a href="#">深圳</a>&nbsp;
+                            <a href="#">清远</a>&nbsp;
+                            <a href="#">东莞</a>&nbsp;
+                            <a href="#">惠州</a>&nbsp;
+                        </div>
+                        <div class="topic">
+                            <div class="topic1">热门活动&nbsp;</div>
+                            <a href="#">灵山大佛</a>&nbsp;
+                            <a href="#">普陀山</a>&nbsp;
+                            <a href="#">周庄</a>&nbsp;
+                            <a href="#">兵马俑</a>&nbsp;
+                        </div>
+
+                    </div>
+                </div>
+                <div class="hotels"> <!-- 酒店 -->
+                    <div class="hotels_title">
+                        <div class="domestic">国内酒店</div>
+                        <div class="abroad">海外酒店</div>
+                    </div>
+                    <div class="location_keywords">
+                        <div class="location">
+                            <div class="text">目的地</div>
+                            <input type="text" class="hotels_input" placeholder="输入目的地">
+                        </div>
+                        <div class="keywords">
+                            <div class="text">关键字</div>
+                            <input type="text" class="hotels_input" placeholder="输入位置/酒店名/品牌">
+                        </div>
+                    </div>
+                    <div class="times">
+                        <div class="occupancy">
+                            <div class="text">入住日期</div>
+                            <input type="date" class="occupancy_time" id="date-input">
+                        </div>
+                        <div class="departure">
+                            <div class="text">离店日期</div>
+                            <input type="date" class="departure_time" id="date-input">
+                        </div>
+                    </div>
+                    <input type="button" value="搜 索" class="hotels_button">
+                </div>
+                <div class="flights"> <!-- 机票 -->
+                    <div class="flights_title">
+                        <div class="domestic_flights">国内机票</div>
+                        <div class="abroad_flights">国际·港澳台机票</div>
+                    </div>
+                    <div class="radio_button">
+                        <!-- 单选按钮组 -->
+                        <label>
+                            <input type="radio" name="radioGroup" checked>
+                            <span class="custom-radio"></span>
+                            <span>单程</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="radioGroup">
+                            <span class="custom-radio"></span>
+                            <span>往返</span>
+                        </label>
+                    </div>
+                    <div class="start_arrive">
+                        <div class="start">
+                            <div class="text">出发城市</div>
+                            <input type="text" class="start_city" placeholder="城市名">
+                        </div>
+                        <div class="arrive">
+                            <div class="text">到达城市</div>
+                            <input type="text" class="arrive_city" placeholder="城市名">
+                        </div>
+                    </div>
+                    <div class="times">
+                        <div class="start_time">
+                            <div class="text">出发日期</div>
+                            <input type="date" class="occupancy_time" id="date-input">
+                        </div>
+                        <div class="round_trip">
+                            <div class="text">返回日期</div>
+                            <input type="date" class="departure_time" id="date-input">
+                        </div>
+                    </div>
+                    <input type="button" value="搜 索" class="flights_button">
+                </div>
+                <div class="trains"> <!-- 火车票 -->
+                    <div class="start_arrive">
+                        <div class="start">
+                            <div class="text">出发城市</div>
+                            <input type="text" class="start_city" placeholder="城市名">
+                        </div>
+                        <div class="arrive">
+                            <div class="text">到达城市</div>
+                            <input type="text" class="arrive_city" placeholder="城市名">
+                        </div>
+                    </div>
+                    <div class="start_time">
+                        <div class="text">出发日期</div>
+                        <input type="date" class="occupancy_time" id="date-input">
+                    </div>
+                    <div class="flights_checkbox"><!-- 复选框 -->
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        <label for="subscribe">
+                            只搜高铁/动车
+                        </label>
+                    </div>
+                    <input type="button" value="搜 索" class="flights_button">
+                    <img class="search_train_b" src="./images/search_train_b.png" alt="">
+                </div>
+                <div class="holiday"> <!-- 度假 -->
+                    <div class="holiday_title">
+                        <div class="domesticd_travel">境内游</div>
+                        <div class="outbound_travel">出境游</div>
+                        <div class="visa">签证</div>
+                        <div class="cruise">邮轮</div>
+                    </div>
+                    <div class="location_keywords">
+                        <div class="location">
+                            <div class="text">出发地</div>
+                            <input type="text" class="holiday_input" placeholder="请输入出发地">
+                        </div>
+                        <div class="keywords">
+                            <div class="text">目的地</div>
+                            <input type="text" class="holiday_input" placeholder="请输入目的地、主题或关键词">
+                        </div>
+                    </div>
+                    <input type="button" value="搜 索" class="holiday_button">
+                    <img class="search_train_b" src="./images/search_train_b.png" alt="">
+                </div>
+            </div>
+            <script>
+                $(document).ready(function () {
+                    $('.list_query li').mouseover(function (e) {
+                        inx = $(this).index('.list_query li');
+                        $('.inquire>div').eq(inx).show();
+
+                        $('.inquire>div').not($('.inquire>div').eq(inx)).hide();
+                    });
+                });
+                $(document).ready(function () {
+                    // 默认选中第一个 li，并显示对应的 inquire > div
+                    $('.list_query li:first').addClass('selected');
+                    $('.inquire > div:first').show();
+
+                    // 鼠标移入事件处理
+                    $('.list_query li').mouseover(function (e) {
+                        var index = $(this).index();
+
+                        // 移除之前选中的样式
+                        $('.list_query li.selected').removeClass('selected');
+
+                        // 添加选中样式
+                        $(this).addClass('selected');
+
+                        // 显示对应的 inquire > div，隐藏其他的
+                        $('.inquire > div').hide().eq(index).show();
+                    });
+                });
+
+
+            </script>
+        </div>
+        <div class="carousel"><!-- 轮播图 -->
+            <div class="slides">
+                <div class="slide"><img src="./images/carousel_img/lianyungang.jpg" alt="lianyungang.jpg"></div>
+                <div class="slide"><img src="./images/carousel_img/jiangnan.png" alt="jiangnan.jpg"></div>
+                <div class="slide"><img src="./images/carousel_img/singapore.jpg" alt="singapore.jpg"></div>
+                <div class="slide"><img src="./images/carousel_img/guangxi_lijiang.jpg" alt="guangxi_lijiang.jpg"></div>
+                <div class="slide"><img src="./images/carousel_img/xizang_budalagong.jpg" alt="xizang_budalagong.jpg">
+                </div>
+                <div class="slide"><img src="./images/carousel_img/xierdun.jpg" alt="xierdun.jpg"></div>
+                <div class="slide"><img src="./images/carousel_img/hotel1.jpg" alt="hotel1.jpg"></div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+    </div>
+    <div class="column"> <!-- 各功能展示栏目 -->
+        <div id="hot-spots" class="spots_show"> <!-- 景点部分展示 -->
+            <div class="sightseeing_spots">
+                <span>玩景点</span>
+                <span>广州</span>
+                <span>佛山</span>
+                <span>东莞</span>
+                <span>中山</span>
+                <span>江门</span>
+                <span>清远</span>
+                <span>肇庆</span>
+                <span>深圳</span>
+                <span>更多</span>
+            </div>
+            <div class="attractions">
+                <ul class="attractions_list">
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots1.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">广州塔</div>
+                                <div class="spots_price">￥74<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots2.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">广州长隆野生动物世界</div>
+                                <div class="spots_price">￥165<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots3.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">广州长隆欢乐世界</div>
+                                <div class="spots_price">￥140<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots4.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">广州热雪奇迹</div>
+                                <div class="spots_price">￥198<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots5.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">宝墨园·南粤苑</div>
+                                <div class="spots_price">￥39.9<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots6.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">白水寨风景名胜区</div>
+                                <div class="spots_price">￥30<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots7.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">正佳极地海洋世界</div>
+                                <div class="spots_price">￥128<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">广州</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/spots_show/spots8.jpg" alt="spots" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="spots_name">广州长隆飞鸟乐园</div>
+                                <div class="spots_price">￥70<span>起</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more_spots">
+                    <div class="hot_city">
+                        <div class="city_title">热门城市</div>
+                        <div class="city_name">
+                            <span>广州</span>
+                            <span>清远</span>
+                            <span>珠海</span>
+                            <span>东莞</span>
+                        </div>
+                        <div class="city_name">
+                            <span>中山</span>
+                            <span>河源</span>
+                            <span>韶关</span>
+                            <span>梅州</span>
+                        </div>
+                        <div class="city_name">
+                            <span>桂林</span>
+                            <span>厦门</span>
+                            <span>潮州</span>
+                            <span>龙岩</span>
+                        </div>
+                        <div class="city_name">
+                            <span>漳州</span>
+                            <span>长沙</span>
+                            <span>三亚</span>
+                            <span>柳州</span>
+                        </div>
+                    </div>
+                    <div class="themed_activities">
+                        <div class="activities_title">主题活动</div>
+                        <div class="activity_name">
+                            <span>儿童乐园</span>
+                            <span>温泉</span>
+                        </div>
+                        <div class="activity_name">
+                            <span>主题乐园</span>
+                            <span>游船</span>
+                            <span>游乐场</span>
+                        </div>
+                        <div class="activity_name">
+                            <span>公园</span>
+                            <span>自然风光</span>
+                            <span>展览</span>
+                        </div>
+                    </div>
+                    <div class="disney">
+                        <img src="./images/column_img/spots_show/disney_logo.png" alt="" class="disney_img">
+                        <div class="disney_name">
+                            <span>游迪士尼</span>
+                            <span>约会白雪公主</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hotel-accommodation" class="hotels_show"> <!-- 酒店部分展示 -->
+            <div class="sightseeing_spots">
+                <span>住酒店</span>
+                <span>广州</span>
+                <span>佛山</span>
+                <span>东莞</span>
+                <span>中山</span>
+                <span>江门</span>
+                <span>清远</span>
+                <span>肇庆</span>
+                <span>深圳</span>
+                <span>更多</span>
+            </div>
+            <div class="attractions">
+                <ul class="attractions_list">
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels1.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">维多利亚酒店(佛山祖庙店)</div>
+                                <div class="hotels_price"><span>客栈民宿</span><span>￥184<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels2.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">佛山希尔顿酒店</div>
+                                <div class="hotels_price"><span>客栈民宿</span><span>￥534<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels3.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">四季花开酒店(佛山湾华地铁站店)</div>
+                                <div class="hotels_price"><span>国内酒店</span><span>￥184<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels4.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">佛山花语岸私人庭院</div>
+                                <div class="hotels_price"><span>国内酒店</span><span>￥138<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels5.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">佛山八方动漫主题酒店</div>
+                                <div class="hotels_price"><span>客栈民宿</span><span>￥139<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels6.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">诗贝酒店(佛山祖庙地铁站岭南新天地店)</div>
+                                <div class="hotels_price"><span>客栈民宿</span><span>￥313<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels7.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">原己目简致生活美学酒店(佛山祖庙店)</div>
+                                <div class="hotels_price"><span>客栈民宿</span><span>￥89<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">佛山</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/hotels_show/hotels8.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">麗枫酒店(佛山顺德清晖园店)</div>
+                                <div class="hotels_price"><span>客栈民宿</span><span>￥238<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more_hotels">
+                    <img src="./images/column_img/more_hotel.jpg" alt="" class="advertising">
+                    <span>广告</span>
+                </div>
+            </div>
+        </div>
+        <div id="travel-reviews" class="comments_show"> <!-- 评论部分展示 -->
+            <div class="title1">
+                <h1>评论区</h1>
+            </div>
+            <hr />
+            <div class="person1">
+                <span class="sp1">HXZ9_IT</span> <span class="sp2">2024-4-2 15:38:37</span>
+                <p>第一次用飞马，太让我们惊喜了！真的很不错，行程安排的也很好！幸运的是，往返飞机都没有延误！伊露岛的美，让我们的蜜月越发美满！</p>
+                <span class="sp3">来自：飞马驴友 <a>www.feima.com</a></span>
+            </div>
+            <hr />
+            <div class="person2">
+                <span class="sp1">外星人</span> <span class="sp2">2024-5-2 15:05:37</span>
+                <p>岛还可以，就是沙屋有虫子，不太让人满意，水屋确实挺棒的。饭嘛，国外基本都那样吧，海鲜还行。</p>
+                <span class="sp3">来自：飞马驴友 <a>www.feima.com</a></span>
+            </div>
+            <hr />
+            <div class="person3">
+                <span class="sp1">用户4564546456745167</span> <span class="sp2">2024-6-2 15:05:37</span>
+                <p>大雁塔位于唐长安城晋昌坊（今陕西省西安市南）的大慈恩寺内，又名“慈恩寺塔”。
+                    唐永徽三年（652年），玄奘为保存由天竺经丝绸之路带回长安的经卷佛像主持修建了大雁塔，最初五层，后加盖至九层，
+                    再后层数和高度又有数次变更，最后固定为所看到的七层塔身，通高64.517米，底层边长25.5米。</p>
+                <span class="sp3">来自：飞马驴友 <a>www.feima.com</a></span>
+            </div>
+            <hr />
+            <div class="person3">
+                <span class="sp1">随风走遍中国</span> <span class="sp2">2024-6-2 15:05:37</span>
+                <p>西安！20年就想去的，结果计划不如变化快！</p>
+                <span class="sp3">来自：飞马驴友 <a>www.feima.com</a></span>
+            </div>
+            <hr />
+            <div class="more_reviews">
+                <span>点击查看更多</span>
+            </div>
+        </div>
+        <div id="travel-notes" class="notes_showcase"><!-- 笔记部分展示 -->
+            <div class="title1">
+                <h1>旅游笔记</h1>
+            </div>
+            <div class="notes-container">
+                <!-- 第一条笔记 -->
+                <div class="note">
+                    <div class="author-info">
+                        <img src="./images/person1.jpg" alt="Author Avatar">
+                        <div>
+                            <span>HXZ9_IT</span>
+                            <span>时间：2024-04-2 15:38:37</span>
+                            <span>IP：西藏</span>
+                        </div>
+                    </div>
+                    <div class="note-content">
+                        <h2>布达拉宫</h2>
+                        <p>它是无数人心中的朝圣圣地，是世界上海拔最高的古代宫殿，也是西藏最庞大、最完整的古代宫堡建筑群。它就是位于拉萨市中心的布达拉宫。布达拉宫依山累气，群楼重叠，最高处海拔3767.19米，占地41万平方米，宫体外观13层，内里九层，高115米。主体建筑由红宫、白宫两大部分组成，红宫居中，白宫横冠两翼，红白相间，5座宫顶覆盖流金铜马，金光灿烂，气势雄伟，是藏族古建筑艺术的精华，被誉为高原盛殿2023年1月3日布达拉宫对外开放你的西藏之旅开始了吗？
+                        </p>
+                    </div>
+                    <div class="video-container">
+                        <h2>相关视频</h2>
+                        <p>点击播放视频：</p>
+                        <video width="80%" height="500" src="./images/column_img/notes_show/布达拉宫.mp4" controls autoplay
+                            loop muted></video>
+                    </div>
+                </div>
+                <!-- 第二条笔记 -->
+                <div class="note">
+                    <div class="author-info">
+                        <img src="./images/person2.jpg" alt="Author Avatar">
+                        <div>
+                            <span>汤圆圆圆</span>
+                            <span>时间：2024-04-16 15:38:37</span>
+                            <span>IP：广东</span>
+                        </div>
+                    </div>
+                    <div class="note-content">
+                        <h2>大雁塔</h2>
+                        <p>大雁塔现存最早、规模最大的唐代四方楼阁式砖塔，是中国古代建筑的杰出代表，也是世界文化遗产之一。佛塔始建于公元652年，历经了多次重建和扩建。现在的大雁塔高达64.1米，外形呈正方形。塔身为七层建筑风格，融合了印度、波斯、中亚等地的艺术风格，是中外文化交流的重要见证。这位千年老者，目睹了大唐盛世的蒸笼岁月，忍受过荒草丛生的苍凉，也阅纳了今日人潮汹涌的繁盛。点赞加收藏，关注主播不迷路。
+                        </p>
+                    </div>
+                    <div class="video-container">
+                        <h2>相关视频</h2>
+                        <p>点击播放视频：</p>
+                        <video width="80%" height="500" src="./images/column_img/notes_show/大雁塔.mp4" controls autoplay
+                            loop muted></video>
+                    </div>
+                </div>
+                <!-- 第三条笔记 -->
+                <div class="note">
+                    <div class="author-info">
+                        <img src="./images/icon_personal.jpg" alt="Author Avatar">
+                        <div>
+                            <span>周大叔*</span>
+                            <span>时间：2024-05-2 15:38:37</span>
+                            <span>IP：北京</span>
+                        </div>
+                    </div>
+                    <div class="note-content">
+                        <h2>长白山</h2>
+                        <p>常相守，共白头，此山为正。长白山的浪漫就是如此。长白山为秀名虎山，因起主风白头山多白色浮石与积雪而得名。见到长白山的那一刻，我的心里好像下了一场雪原。火山地貌、冰川遗迹共同长白山有天石瀑布，有雪雕林海等著名自然风光。里里浪漫秘自由。我在长白之间，希望你岁岁平安。
+                        </p>
+                    </div>
+                    <div class="video-container">
+                        <h2>相关视频</h2>
+                        <p>点击播放视频：</p>
+                        <video width="80%" height="500" src="./images/column_img/notes_show/长白山.mp4" controls autoplay
+                            loop muted></video>
+                    </div>
+                </div>
+
+                <!-- 更多笔记可以继续添加 -->
+
+            </div>
+            <div class="more_reviews">
+                <span>点击查看更多</span>
+            </div>
+
+            <!-- 左右滚动按钮 -->
+            <div class="scroll-buttons">
+                <div class="scroll-button-left">
+                    <button class="scroll-left">&#8249;</button>
+                </div>
+                <div class="scroll-button-right">
+                    <button class="scroll-right">&#8250;</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="perimeter" class="perimeter_show"> <!-- perimeter_show 游周边部分展示 -->
+            <div class="sightseeing_spots">
+                <span>游周边</span>
+                <span>热推</span>
+                <span>湛江</span>
+                <span>海南</span>
+                <span>茂名</span>
+                <span>江门</span>
+                <span>阳江</span>
+                <span>广西</span>
+                <span>桂林</span>
+                <span>更多</span>
+            </div>
+            <div class="attractions">
+                <ul class="attractions_list">
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter1.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">西安+兵马俑+华清池1天跟团游升级陕菜午餐 冰峰饮品 免费使用双景区耳麦 三环内上门接</div>
+                                <div class="hotels_price"><span>西安-西安</span><span>￥260<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter2.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">五环内可上门接+北京八达岭长城+颐和园+清华大学外景+可升级VIP包团游+打卡鸟巢双汽1日跟团游可选上门接 全程旅游专车
+                                    贴心导游服务 游玩时间更充足</div>
+                                <div class="hotels_price"><span>北京-北京</span><span>￥155<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter3.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">东方明珠+城市发展陈列馆+城隍庙+外滩1天跟团游纯玩无购物无自费</div>
+                                <div class="hotels_price"><span>上海-上海</span><span>￥248<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter4.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">重庆+大足+宝顶山石刻+北山石刻1天跟团游纯玩0购物/赠送大足博物馆/无线耳麦讲解/与其山行海宿 何不选择轻松</div>
+                                <div class="hotels_price"><span>重庆-重庆</span><span>￥209<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter5.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">
+                                    成都+阿坝+九寨沟+黄龙+熊猫乐园或都江堰3天2晚跟团游限时免费升级1排3座头等舱车/纯玩0购物店/双成人下单立省40/熊猫乐园&都江堰2选1/可选1排3座头等舱车+多酒店套餐可选（3钻/4钻/优选4钻/5钻/天源豪生）/赠送藏家土火锅+体验藏家欢乐颂
+                                </div>
+                                <div class="hotels_price"><span>成都-成都</span><span>￥1038<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter6.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">武隆+重庆+天坑三桥+龙水峡地缝1天跟团游真正纯玩 绝无隐形店 主城五区定点接客 专业导游景区讲解 定点接 含中餐
+                                    可升级VIP头等舱35人团</div>
+                                <div class="hotels_price"><span>重庆-重庆</span><span>￥319<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter7.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">古龙峡全程漂流+黄腾峡天门悬廊+马头山攀岩2日游纯玩0购物0自费 含3正1早 入住市区精品酒店</div>
+                                <div class="hotels_price"><span>东莞-清远</span><span>￥499<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="address">跟团游</div>
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/perimeter_show/perimeter8.jpg" alt="hotels"
+                                class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">成都+都江堰+青城山1天跟团游真纯玩0购物店/成都三环内免费接
+                                    /可选2+1布局陆地头等舱/全程1个导游不更换导游/不推荐自费（道街都江堰+街子古镇）/不进寺庙烧香（文庙/城隍庙）为您省时/1天游览两大5A景点：道教名山-青城山+千年古堰-都江堰,C路线特别赠送观赏川剧变脸表演
+                                </div>
+                                <div class="hotels_price"><span>成都-成都</span><span>￥338<span>起</span></span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more_perimeter">
+                    <div class="hot_city">
+                        <div class="city_title">热门城市</div>
+                        <div class="city_name">
+                            <span>广州</span>
+                            <span>清远</span>
+                            <span>珠海</span>
+                            <span>东莞</span>
+                        </div>
+                        <div class="city_name">
+                            <span>中山</span>
+                            <span>河源</span>
+                            <span>韶关</span>
+                            <span>梅州</span>
+                        </div>
+                        <div class="city_name">
+                            <span>漳州</span>
+                            <span>长沙</span>
+                            <span>澳门</span>
+                            <span>香港</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="china" class="china_show"> <!-- china_show 游中国部分展示 -->
+            <div class="sightseeing_spots">
+                <span>游中国</span>
+                <span>热门</span>
+                <span>贵阳</span>
+                <span>丽江</span>
+                <span>三亚</span>
+                <span>广州</span>
+                <span>琼海</span>
+                <span>海口</span>
+                <span>兰州</span>
+                <span>成都</span>
+                <span>更多</span>
+            </div>
+            <div class="attractions">
+                <ul class="attractions_list">
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china1.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">贵阳</div>
+                                <div class="hotels_price"><span>筑城的春光</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china2.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">丽江</div>
+                                <div class="hotels_price"><span>水乡艳遇之都</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china3.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">三亚</div>
+                                <div class="hotels_price"><span>被称为“东方夏威夷”</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china4.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">广州</div>
+                                <div class="hotels_price"><span>广式早茶文化</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china5.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">琼海</div>
+                                <div class="hotels_price"><span>风光旖旎</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china6.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">海口</div>
+                                <div class="hotels_price"><span>醉美海滨椰城</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china7.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">兰州</div>
+                                <div class="hotels_price"><span>丝绸之路</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/china_show/china8.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">成都</div>
+                                <div class="hotels_price"><span>吃香喝辣在巴蜀</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more_hotels">
+                    <img src="./images/column_img/china.jpg" alt="" class="advertising">
+                    <span>广告</span>
+                </div>
+            </div>
+        </div>
+        <div id="world" class="world_show china_show"> <!-- world_show 游世界部分展示 -->
+            <div class="sightseeing_spots">
+                <span>游世界</span>
+                <span>热推</span>
+                <span>东南亚</span>
+                <span>欧洲</span>
+                <span>海岛</span>
+                <span>日本</span>
+                <span>中东非</span>
+                <span>美洲</span>
+                <span>澳新</span>
+                <span>更多</span>
+            </div>
+            <div class="attractions">
+                <ul class="attractions_list">
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world1.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">曼谷</div>
+                                <div class="hotels_price"><span>东方威尼斯</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world2.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">新加坡</div>
+                                <div class="hotels_price"><span>夏天欣赏百花盛开</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world3.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">清迈</div>
+                                <div class="hotels_price"><span>北国玫瑰之都</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world4.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">亚庇</div>
+                                <div class="hotels_price"><span>马来半岛的童话</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world5.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">法兰克福</div>
+                                <div class="hotels_price"><span>歌德故乡</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world6.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">巴塞罗那</div>
+                                <div class="hotels_price"><span>建筑里的童话</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world7.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">宿雾</div>
+                                <div class="hotels_price"><span>美丽静谧的小岛</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="manifest">
+                        <div class="manifest_img_name_price">
+                            <img src="./images/column_img/world_show/world8.jpg" alt="hotels" class="manifest_img">
+                            <div class="manifest_name_price">
+                                <div class="hotels_name">芽庄</div>
+                                <div class="hotels_price"><span>东南亚的诱人之滨</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="more_hotels">
+                    <img src="./images/column_img/world.jpg" alt="" class="advertising">
+                    <span>广告</span>
+                </div>
+            </div>
+        </div>
+        <div id="serve" class="serve_show"> <!-- 旅行服务部分展示 -->
+            <div class="serve">旅行服务</div>
+            <div class="serves">
+                <div class="outbound_travel">
+                    <img src="./images/column_img/serve_show/serve1.png" alt="" class="travel_img">
+                    <div class="serve_title_describe">
+                        <span>出境游</span><span>全方位旅游服务，让您省心出游，畅玩全球</span>
+                    </div>
+                </div>
+                <div class="visa">
+                    <img src="./images/column_img/serve_show/serve2.png" alt="" class="visa_img">
+                    <div class="visa_title_describe">
+                        <span>签证</span><span>专业顾问一对一服务，出签成功率99.8%</span>
+                    </div>
+                </div>
+                <div class="insurance">
+                    <img src="./images/column_img/serve_show/serve3.png" alt="" class="insurance_img">
+                    <div class="insurance_title_describe">
+                        <span>保险</span><span>买一份保险，买一份保障和安心</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom"> <!-- 底部最后部分 -->
+        <div class="merit">
+            <div class="merit1"><img src="./images/bottom_img/icon_pay.png" alt="" class=""><span>价格公正，安心购买</span></div>
+            <div class="vertical"></div>
+            <div class="merit2"><img src="./images/bottom_img/quality.png" alt="" class=""><span>品质保证，放心出行</span></div>
+            <div class="vertical"></div>
+            <div class="merit3"><img src="./images/bottom_img/products.png" alt="" class=""><span>产品丰富，一站式服务</span>
+            </div>
+            <div class="vertical"></div>
+            <div class="merit4"><img src="./images/bottom_img/customer.png" alt="" class=""><span>专业顾问，24小时客服</span>
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="contact-left">
+                <div class="contact-item">
+                    <img src="./images/bottom_img/phone.jpg" alt="" class="">
+                    <span>24小时服务热线:<br />95711</span>
+                </div>
+                <div class="contact-item">
+                    <img src="./images/bottom_img/email.jpg" alt="" class="">
+                    <span>意见反馈</span>
+                </div>
+            </div>
+            <div class="contact-middle">
+                <div><span>关于飞马</span></div>
+                <div><span>飞马简介</span></div>
+                <div><span>可信网站</span></div>
+                <div><span>网站地图</span></div>
+                <div><span>业务资质</span></div>
+                <div><span>用户协议与隐私条款</span></div>
+            </div>
+            <div class="contact-right">
+                <div><span>加盟合作</span></div>
+                <div><span>合作加盟</span></div>
+                <div><span>商旅合作</span></div>
+                <div><span>旅游保险</span></div>
+                <div><span>网站联盟</span></div>
+                <div><span>门票合作</span></div>
+                <div><span>机票合作推广赚佣金</span></div>
+                <div><span>旅游实体门店加盟</span></div>
+            </div>
+            <div class="contact-app">
+                <div><span>联系我们</span></div>
+                <div><span>联系我们</span></div>
+                <div><span>投诉建议</span></div>
+                <div><span>诚聘英才</span></div>
+                <div><span>廉政举报平台</span></div>
+            </div>
+            <div class="app-download">
+                <div><span>飞马旅行app</span></div>
+                <img src="./images/bottom_img/erweima.png" alt="" class="erweima">
+                <div><span>手机预订更优惠</span></div>
+            </div>
+        </div>
+
+        <div class="additional-info">
+            <div class="long_vertical"></div>
+            <div>热点推荐：<span>迪拜旅游 泰国旅游 巴厘岛旅游 普吉岛旅游 柬埔寨旅游 日本旅游 斯里兰卡旅游 泰国六日游 长滩岛旅游 马尔代夫旅游 越南旅游 夏威夷旅游 塞班岛旅游 新西兰旅游
+                    欧洲旅游</span></div>
+            <div>友情链接：<span>QQ钱包 TripAdvisor 户外运动 同驿商城 地图查找 欣欣旅游网 米胖网 长岛旅游 劲旅网 天气网 北京中国国旅 中国签证资讯网 穷游网 旅游新媒体 中国经济网
+                    酒店预订</span></div>
+        </div>
+        <div class="copyright">
+            <div class="copyright-info">
+                <div><span>Copyright © 2002-2024 版权所有 飞马网络科技股份有限公司</span></div>
+                <div><span>经营许可证编号：合字B2-20180016 备案序号：粤ICP备09090909号 粤公网安备320202020202023号 旅行社业务许可证：L-JS-CJ00001</span>
+                </div>
+                <div><span>旅游网站诚信建设承诺书 旅游网站守法诚信责任状 违规失信举报热线：4007-777-777转9</span></div>
+                <div><span>国家文旅部全国旅游投诉热线：拨打12345，或登录全国旅游网络投诉举报平台</span></div>
+                <div><span>网站网违法和不良信息举报 邮箱：jcj@feima.com</span></div>
+                <div class="empty-span">
+                    <img src="./images/bottom_img/head_logo.png" alt="">
+                    <img src="./images/bottom_img/icon_web.jpg" alt="">
+                    <img src="./images/bottom_img/szicbok.gif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar"> <!-- 悬浮导航栏 -->
+        <a href="#tickets">搜索</a>
+        <a href="#hot-spots">景点</a>
+        <a href="#hotel-accommodation">酒店</a>
+        <a href="#travel-reviews">评论</a>
+        <a href="#travel-notes">笔记</a>
+        <a href="#perimeter">周边</a>
+        <a href="#china">国内</a>
+        <a href="#world">出境</a>
+        <a href="#serve">服务</a>
+        <a href="#top">
+            <div><img src="./images/icon_arrows.png" alt="" id="icon_arrows"></div>
+            <div>TOP</div>
+        </a>
+    </div>
+
+</body>
+
+</html>

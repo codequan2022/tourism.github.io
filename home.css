@@ -1,0 +1,2054 @@
+body {
+    font-size: 14px;
+    width: 100%;
+    /* width: 1200px; */
+    margin: auto;
+}
+
+/* ======================== top顶部 ===================== */
+.top {
+    /* background-color: #dd2525; */
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5vw 0;
+}
+
+.logo_name {
+    width: 16vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.logo {
+    width: 5vw;
+    cursor: pointer;
+    /* 鼠标指针 */
+    /* border-radius: 50%; */
+}
+
+.logo_name_link {
+    text-decoration: none;
+}
+
+.name {
+    width: 11vw;
+    font-size: 2.6vw;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+    font-weight: 900;
+    background: linear-gradient(to right, red, yellow, green, blue);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-style: italic;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+
+.search {
+    background-color: #00bf65;
+    width: 45vw;
+    height: 3.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.25vw solid #00bf65;
+    border-radius: 0.8vw;
+}
+
+.search .input {
+    width: 35vw;
+    height: 3.4vw;
+    color: gray;
+    font-size: 1.3vw;
+    border: none;
+    padding: 0 0.8vw;
+    border-radius: 0.6vw 0 0 0.6vw;
+}
+
+.search input:focus {
+    border: none;
+    outline: none;
+}
+
+.search .button {
+    background-color: #00bf65;
+    /* margin-bottom: 0.1vw; */
+    width: 10vw;
+    height: 3.4vw;
+    color: #fff;
+    font-size: 1.5vw;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    /* 鼠标指针 */
+    border-radius: 0 1.5vw 1.5vw 0;
+}
+
+.login {
+    width: 17vw;
+    height: 6vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.login img {
+    width: 20%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.link {
+    font-size: 1vw;
+    display: flex;
+    justify-content: right;
+}
+
+.link a {
+    font-size: 1vw;
+    color: #00bf65;
+}
+
+/* ======================= nav导航栏 ===================== */
+.nav {
+    background-color: #00bf65;
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* border-radius: 0.7vw; */
+}
+
+.nav a {
+    /* background-color: rgb(241, 165, 72); */
+    width: 20vw;
+    height: 100%;
+    color: #fff;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #f9f9f9;
+    font-size: 1.4vw;
+    font-weight: 600;
+    /* border-radius: 0.5vw; */
+}
+
+.nav a:first-of-type {
+    background-color: rgba(249, 249, 249, 0.65);
+    color: #00bf65;
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+/* ============== query_carousel查询框和轮播图 ============ */
+.query_carousel {
+    /* background-color: #57f5c0; */
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw 0;
+    padding: 0;
+}
+
+/* =================== query_box查询框 =================== */
+.query_box {
+    background-color: #7044a7;
+    width: 50%;
+    height: 25vw;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: #1400c4 solid 0.2vw;
+    margin-right: 2vw;
+}
+
+/* ============== 左查询框导航栏 ================ */
+.list_query {
+    /* background-color: pink; */
+    width: 19%;
+    border-radius: 2vw 0 0 2vw;
+    height: 25vw;
+}
+
+.list_query ul {
+    /* background-color: aquamarine; */
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+    /* 去除列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.list_query li {
+    /* background-color: #00bf65; */
+    height: 5vw;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.list_query a {
+    width: 100%;
+    height: 5vw;
+    color: inherit;
+    text-decoration: none;
+    font-size: 1.6vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_query li:nth-child(1),
+li:nth-child(1) a {
+    border-radius: 2vw 0 0 0;
+}
+
+.list_query li:last-child,
+.list_query li:last-child a {
+    border-radius: 0 0 0 2vw;
+}
+
+/* .list_query li:hover,
+.list_query a:hover {
+    color: #fff;
+    font-weight: 600;
+} */
+
+/* .list_query li:nth-child(1)>a {
+    background-color: #fff;
+    color: #7044a7;
+    font-weight: 600;
+} */
+
+/* .list_query li a:hover ,.list_query li:first-child a{
+    color: #7044a7;
+    background-color: #fff;
+    font-weight: 600;
+} */
+
+
+.list_query li.selected {
+    background-color: white;
+    color: #7044a7;
+    font-weight: 600;
+    cursor: pointer;
+    /* 让鼠标在hover时显示为指针，表示可点击 */
+}
+
+/* ==================== 右查询框搜索栏 ================ */
+.inquire {
+    background-color: white;
+    width: 81%;
+    border-radius: 0 2vw 2vw 0;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==================== 景点部分 ====================== */
+.spots,
+.hotels,
+.flights,
+.trains,
+.holiday {
+    /* background-color: #00bf65; */
+    display: flex;
+    /*当display的值为flex时不隐藏，为none时隐藏*/
+    /* display: none; */
+    flex-direction: column;
+    width: 100%;
+    height: 23vw;
+    box-sizing: border-box;
+    padding-left: 1vw;
+}
+
+.spots .title,
+.hotels .hotels_title,
+.flights .flights_title,
+.holiday_title,
+.holiday_title {
+    /* background-color: aqua; */
+    width: 93%;
+    height: 4vw;
+    font-size: 1.2vw;
+    font-weight: 700;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-bottom: rgb(207, 207, 207) solid 0.2vw;
+}
+
+.spots .title .title_spots,
+.title_perimeter,
+.domestic,
+.abroad,
+.domestic_flights,
+.abroad_flights,
+.holiday .domesticd_travel,
+.holiday .outbound_travel,
+.holiday .visa,
+.holiday .cruise {
+    /* background-color: #00bf65; */
+    margin-right: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 1vw;
+    border-bottom: #fff solid 0.25vw;
+    box-sizing: border-box;
+    height: 4vw;
+    cursor: pointer;
+}
+
+.spots .title .title_spots,
+.title_perimeter:hover,
+.domestic,
+.abroad:hover,
+.domestic_flights,
+.abroad_flights:hover,
+.holiday .domesticd_travel,
+.holiday .outbound_travel:hover,
+.holiday .visa:hover,
+.holiday .cruise:hover {
+    box-sizing: border-box;
+    border-bottom: #00bf65 solid 0.25vw;
+}
+
+.spots .spots_input {
+    background-color: #efefef;
+    width: 90%;
+    height: 4.5vw;
+    margin: 1vw;
+    padding: 0 1.5vw;
+    box-sizing: border-box;
+    font-size: 1.3vw;
+    border-radius: 0.6vw;
+    border: none;
+}
+
+.spots input:focus {
+    border: none;
+    outline: none;
+}
+
+.spots .spots_button,
+.hotels_button,
+.flights_button,
+.holiday_button {
+    width: 28%;
+    height: 3.5vw;
+    margin: 0.5vw 0 0 25.5vw;
+    box-sizing: border-box;
+    font-size: 1.3vw;
+    color: white;
+    border-radius: 0.6vw;
+    background-color: #00bf65;
+    border: none;
+    cursor: pointer;
+}
+
+.spots .recommend1 {
+    display: flex;
+    /*当display的值为flex时不隐藏，为none时隐藏*/
+    /* display: none;*/
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3vw 0 0 1vw;
+}
+
+.spots .recommend1 .topic,
+.recommend2 .topic {
+    margin-top: 0.5vw;
+    font-size: 1vw;
+    font-weight: 600;
+    display: flex;
+    justify-content: left;
+}
+
+.spots .recommend1 .topic a,
+.spots .recommend2 .topic a {
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 400;
+    color: #808080;
+    margin-left: 1vw;
+}
+
+.spots .recommend1 .topic .arrows {
+    width: 1vw;
+    margin-left: 0.2vw;
+    cursor: pointer;
+}
+
+.spots .recommend2 {
+    /* display: flex; */
+    /*当display的值为flex时不隐藏，为none时隐藏*/
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 3vw 0 0 1vw;
+}
+
+/* ==================== 酒店部分 ====================== */
+
+.hotels .location_keywords,
+.hotels .times,
+.flights .start_arrive,
+.flights .times,
+.trains .start_arrive,
+.holiday .location_keywords {
+    /* background-color: #1400c4; */
+    display: flex;
+    justify-content: center;
+    margin-right: 2vw;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hotels .location_keywords .location,
+.hotels .location_keywords .keywords,
+.hotels .times .occupancy,
+.hotels .times .departure,
+.flights .start,
+.flights .arrive,
+.flights .start_time,
+.flights .round_trip,
+.trains .start,
+.trains .arrive,
+.trains .start_time,
+.holiday .location,
+.holiday .keywords {
+    background-color: #efefef;
+    width: 49%;
+    /* margin-right: 0.5vw; */
+    padding: 1vw 1vw;
+    box-sizing: border-box;
+    border-radius: 1vw;
+}
+
+.hotels .location_keywords .location .text,
+.hotels .location_keywords .keywords .text,
+.hotels .times .occupancy .text,
+.hotels .times .departure .text,
+.flights .start .text,
+.flights .arrive .text,
+.flights .start_time .text,
+.flights .round_trip .text,
+.trains .start .text,
+.trains .arrive .text,
+.trains .start_time .text,
+.holiday .location .text,
+.holiday .keywords .text {
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+}
+
+.hotels .hotels_input,
+.hotels .occupancy_time,
+.hotels .departure_time,
+.flights .start_city,
+.flights .arrive_city,
+.flights .occupancy_time,
+.flights .departure_time,
+.trains .occupancy_time,
+.start_city,
+.arrive_city,
+.holiday_input {
+    background-color: #efefef;
+    /* width: 90%; */
+    /* margin: 1vw; */
+    /* padding: 0 1.5vw; */
+    box-sizing: border-box;
+    font-size: 1.2vw;
+    border-radius: 0.6vw;
+    border: none;
+    outline: none;
+}
+
+/* ==================== 机票部分 ====================== */
+.flights .radio_button {
+    /* background-color: #00bf65; */
+    /* display: none; */
+    /* background-color: #1400c4; */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.5vw;
+}
+
+.flights .radio_button label {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.flights .radio_button label span {
+    font-size: 1.2vw;
+}
+
+/* 隐藏默认的单选按钮 */
+.flights input[type="radio"] {
+    display: none;
+}
+
+/* 定义自定义样式 */
+.flights .custom-radio {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid green;
+    /* 初始状态的空心圆 */
+    border-radius: 50%;
+    /* 圆形 */
+    position: relative;
+    cursor: pointer;
+    margin-right: 0.2vw;
+}
+
+.flights .custom-radio::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    /* 默认选中时的小实心圆 */
+    border-radius: 50%;
+    /* 圆形 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    /* 初始状态隐藏 */
+}
+
+/* 设置选中状态 */
+.flights input[type="radio"]:checked+.custom-radio::before {
+    opacity: 1;
+    /* 显示小实心圆 */
+}
+
+/* ==================== 火车票部分 ====================== */
+.trains .start_time{
+    width: 46.6%;
+    margin: 1vw 0;
+    /* display: none; */
+    /* background-color: #1400c4; */
+}
+
+/* ==================== 度假部分 ====================== */
+.holiday,.trains{
+    position: relative;
+}
+.search_train_b {
+    width: 80%;
+    /* background-color: #00bf65; */
+    left: 3vw;
+    bottom: 0;
+    position: absolute;
+}
+
+.inquire>div {
+    display: none;
+}
+
+.inquire>div:first-child {
+    display: block;
+}
+
+/* ===================== carousel轮播图 ================== */
+.carousel {
+    /* background-color: #303332; */
+    width: 35%;
+    height: 25vw;
+    border-radius: 2vw;
+    margin-left: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    flex: 0 0 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: transform 0.6s;
+}
+
+.slide img:hover {
+    transform: scale(1.4);
+}
+
+.pagination {
+    position: absolute;
+    bottom: 1vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.pagination-dot {
+    width: 0.9vw;
+    height: 0.9vw;
+    border-radius: 50%;
+    background-color: #ebebeb;
+    margin: 0 0.4vw;
+    cursor: pointer;
+}
+
+.pagination-dot.active {
+    background-color: #00bf65;
+}
+
+/* =============== column各功能展示栏目 ================== */
+.column {
+    /* background-color: #f8f8ef; */
+    width: 100%;
+    /* height: 200vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+/* ================== spots_show景点部分展示 ====================== */
+.column .spots_show {
+    /* background-color: antiquewhite; */
+    width: 89.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.column .spots_show .sightseeing_spots {
+    /* background-color: #7044a7; */
+    margin: 0.2vw 0;
+    /* padding: 0 0.5vw; */
+    box-sizing: border-box;
+}
+
+.column .spots_show .sightseeing_spots span:first-child {
+    cursor: pointer;
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-right: 5vw;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.column .spots_show .sightseeing_spots span:nth-child(n+2) {
+    /* background-color: rebeccapurple; */
+    margin-right: 2vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 0.6vw 0;
+}
+
+.column .spots_show .sightseeing_spots span:nth-child(2) {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .spots_show .sightseeing_spots span:nth-child(n+2):hover {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .spots_show .attractions {
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30.5vw;
+}
+
+.column .spots_show .attractions .attractions_list {
+    /* background-color: burlywood; */
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0.4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column .spots_show .attractions .attractions_list .manifest {
+    /* background-color: #7044a7; */
+    width: 24%;
+    height: 46.5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.7vw 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.column .spots_show .attractions .attractions_list .manifest:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    /* 悬停时更深的阴影 */
+    opacity: 0.8;
+    /* 悬停时的透明度 */
+}
+
+.column .spots_show .attractions .attractions_list .manifest .address {
+    position: absolute;
+    background-color: rgba(249, 249, 249, 0.5);
+    top: 0;
+    padding: 0.2vw;
+    font-size: 1vw;
+    z-index: 2;
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price {
+    width: 100%;
+    height: 100%;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    overflow: hidden;
+    /* 溢出隐藏 */
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img {
+    width: 100%;
+    transition: transform 0.6s;
+    overflow: hidden;
+    /* 添加过渡效果 */
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img:hover {
+    transform: scale(1.1);
+    /* 悬停时放大1.1倍 */
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vw 0;
+    box-sizing: border-box;
+    border: #ebebeb 0.1vw solid;
+    border-top: none;
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .spots_name {
+    /* background-color: plum; */
+    width: 60%;
+    font-size: 1.2vw;
+    /* font-weight: 600; */
+    padding-left: 0.5vw;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 文本不换行 */
+    text-overflow: ellipsis;
+    /* 可选，显示省略号 */
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .spots_price {
+    font-size: 1.5vw;
+    color: #ff5346;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 文本不换行 */
+    text-overflow: ellipsis;
+    /* 可选，显示省略号 */
+}
+
+.column .spots_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .spots_price span {
+    font-size: 0.8vw;
+    color: grey;
+    margin-right: 0.5vw;
+}
+
+.column .spots_show .attractions .more_spots {
+    width: 20%;
+    height: 91%;
+    margin-left: 2vw;
+    /* margin-top: 1vw; */
+    border-top: #00bf65 solid 0.2vw;
+    background-color: #f0fffa;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.column .spots_show .attractions .more_spots .hot_city,
+.column .spots_show .attractions .more_spots .themed_activities {
+    /* background-color: fuchsia; */
+    height: 33%;
+}
+
+.column .spots_show .attractions .more_spots .hot_city .city_title,
+.column .spots_show .attractions .more_spots .themed_activities .activities_title {
+    height: 20%;
+    font-size: 1vw;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    margin: 0.5vw 0;
+}
+
+.column .spots_show .attractions .more_spots .hot_city .city_name,
+.column .spots_show .attractions .more_spots .themed_activities .activity_name {
+    /* background-color: #00bf65; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 1vw 0.5vw;
+}
+
+.column .spots_show .attractions .more_spots .hot_city .city_name span,
+.column .spots_show .attractions .more_spots .themed_activities .activity_name span {
+    cursor: pointer;
+    margin-right: 1.5vw;
+    font-size: 0.95vw;
+    color: gray;
+}
+
+.column .spots_show .attractions .more_spots .hot_city .city_name span:hover,
+.column .spots_show .attractions .more_spots .themed_activities .activity_name span:hover {
+    font-weight: 600;
+}
+
+.column .spots_show .attractions .more_spots .disney {
+    /* background-color: #7044a7; */
+    display: flex;
+    height: 25%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.column .spots_show .attractions .more_spots .disney img {
+    transition: transform 0.6s;
+}
+
+.column .spots_show .attractions .more_spots .disney img:hover {
+    transform: scale(1.2);
+}
+
+.column .spots_show .attractions .more_spots .disney .disney_name {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column .spots_show .attractions .more_spots .disney .disney_name span:first-child {
+    font-size: 1.2vw;
+    color: black;
+    margin-bottom: 0.5vw;
+}
+
+.column .spots_show .attractions .more_spots .disney .disney_name span:first-child:hover {
+    font-weight: 600;
+}
+
+.column .spots_show .attractions .more_spots .disney .disney_name span:last-child {
+    font-size: 1vw;
+    color: gray;
+}
+
+/* ================== hotels_show酒店部分展示 ====================== */
+.column .hotels_show {
+    /* background-color: antiquewhite; */
+    width: 89.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 4vw auto 0;
+}
+
+.column .hotels_show .sightseeing_spots {
+    /* background-color: #7044a7; */
+    margin: 0.2vw 0;
+    /* padding: 0 0.5vw; */
+    box-sizing: border-box;
+}
+
+.column .hotels_show .sightseeing_spots span:first-child {
+    cursor: pointer;
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-right: 5vw;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.column .hotels_show .sightseeing_spots span:nth-child(n+2) {
+    /* background-color: rebeccapurple; */
+    margin-right: 2vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 0.6vw 0;
+}
+
+.column .hotels_show .sightseeing_spots span:nth-child(3) {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .hotels_show .sightseeing_spots span:nth-child(n+2):hover {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .hotels_show .attractions {
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 34vw;
+}
+
+.column .hotels_show .attractions .attractions_list {
+    /* background-color: burlywood; */
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0.4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column .hotels_show .attractions .attractions_list .manifest {
+    /* background-color: #7044a7; */
+    width: 24%;
+    height: 46.5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.7vw 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.column .hotels_show .attractions .attractions_list .manifest:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    /* 悬停时更深的阴影 */
+    opacity: 0.8;
+    /* 悬停时的透明度 */
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .address {
+    position: absolute;
+    background-color: rgba(249, 249, 249, 0.5);
+    top: 0;
+    padding: 0.2vw;
+    font-size: 1vw;
+    z-index: 2;
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price {
+    width: 100%;
+    height: 100%;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    /* 溢出隐藏 */
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img {
+    width: 100%;
+    height: 10vw;
+    transition: transform 0.6s;
+    overflow: hidden;
+    /* 添加过渡效果 */
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img:hover {
+    transform: scale(1.1);
+    /* 悬停时放大1.1倍 */
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5vw 0 0;
+    box-sizing: border-box;
+    border: #e4e4e4 0.1vw solid;
+    border-top: none;
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_name {
+    /* background-color: plum; */
+    /* width: 60%; */
+    font-size: 1.2vw;
+    /* font-weight: 600; */
+    padding: 0 0.5vw 0;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 文本不换行 */
+    text-overflow: ellipsis;
+    /* 可选，显示省略号 */
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price {
+    font-size: 1.5vw;
+    color: #ff5346;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw;
+    /* background-color: #00bf65; */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 文本不换行 */
+    text-overflow: ellipsis;
+    /* 可选，显示省略号 */
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price span:first-child {
+    font-size: 1vw;
+    color: grey;
+}
+
+.column .hotels_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price>span:first-child:hover {
+    font-weight: 600;
+}
+
+.column .hotels_show .attractions .more_hotels {
+    width: 20%;
+    height: 92%;
+    margin-left: 2vw;
+    /* margin-top: 1vw; */
+    /* border-top: #00bf65 solid 0.2vw; */
+    background-color: #f0fffa;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.column .hotels_show .attractions .more_hotels span {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8vw;
+    color: #fff;
+    padding: 0.2vw;
+    box-sizing: border-box;
+    background-color: rgba(235, 235, 235, 0.2);
+}
+
+.column .hotels_show .attractions .more_hotels .advertising {
+    transition: transform 0.6s;
+}
+
+.column .hotels_show .attractions .more_hotels .advertising:hover {
+    transform: scale(1.2);
+}
+
+
+/* ====================== comments_show 评论部分展示 ================*/
+.comments_show {
+    width: 89.5%;
+    background-color: #fff;
+    margin: 2vw auto;
+    /* padding: 2vw; */
+}
+
+@font-face {
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.comments_show h1 {
+    /* height: 5vw; */
+    /* line-height: 1.5vw; */
+    text-align: left;
+    font-size: 2.5vw;
+    font-family: "FZSTK";
+    color: #000;
+    margin-bottom: 2vw;
+}
+
+.comments_show hr {
+    margin: 0.5vw 0;
+    background-color: #CCC;
+    border: #CCC 0.13vw solid;
+}
+
+.comments_show .person1 {
+    background: url(images/person1.jpg) left center no-repeat;
+    padding-left: 84px;
+    background-size: 4.5vw 4.5vw;
+
+}
+
+.comments_show .person2 {
+    background: url(images/person2.jpg) left center no-repeat;
+    padding-left: 84px;
+    background-size: 4.5vw 4.5vw;
+
+}
+
+.comments_show .person3 {
+    background: url(images/person3.png) left center no-repeat;
+    padding-left: 84px;
+    background-size: 4.5vw 4.5vw;
+
+}
+
+.comments_show .sp1 {
+    color: #F60;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.comments_show .sp2 {
+    color: #999;
+    font-size: 14px;
+}
+
+.comments_show p {
+    font-size: 14px;
+}
+
+.comments_show .sp3 {
+    color: #F60;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.comments_show .more_reviews,
+.notes_showcase .more_reviews {
+    text-align: center;
+    margin-top: 2.5vw;
+}
+
+.comments_show .more_reviews span,
+.notes_showcase .more_reviews span {
+    background-color: #f5f5f5;
+    padding: 1vw 3vw;
+    font-size: 1.6vw;
+    color: rgb(26, 26, 26);
+    border: 0.1vw solid #ccc;
+    opacity: 0.9;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 1vw;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.comments_show .more_reviews span:hover,
+.notes_showcase .more_reviews span:hover {
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /* 添加阴影效果 */
+}
+
+/* ======================= notes_show 笔记部分展示 ================*/
+.notes_showcase {
+    width: 89%;
+    /* 笔记模块的最大宽度 */
+    margin: 2vw auto;
+    /* 居中显示 */
+    padding: 2vw 5vw;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+    border: 0.1vw solid #ccc;
+    position: relative;
+    /* 确保滚动按钮的定位工作 */
+    overflow: hidden;
+    /* 隐藏超出部分 */
+}
+
+.notes_showcase h1 {
+    text-align: left;
+    font-size: 2.5vw;
+    font-family: "FZSTK";
+    color: #000;
+    margin-bottom: 2vw;
+}
+
+.notes_showcase .notes-container {
+    display: flex;
+    /* 水平布局 */
+    overflow-x: hidden;
+    /* 水平滚动隐藏 */
+    gap: 5vw;
+    /* 间距 */
+}
+
+.notes_showcase .note {
+    flex: 0 0 auto;
+    /* 不拉伸，固定宽度 */
+    width: 88%;
+    /* 每条笔记的宽度 */
+    background-color: #fff;
+    border: 0.1vw solid #ccc;
+    padding: 4vw;
+    /* margin-left: 1.4vw; */
+}
+
+.notes_showcase .author-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.notes_showcase .author-info img {
+    width: 4vw;
+    height: 4vw;
+    border-radius: 50%;
+}
+
+.notes_showcase .author-info div {
+    /* background-color: #00bf65; */
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 0.5vw;
+}
+
+.notes_showcase .author-info div span:nth-child(1) {
+    /* background-color: #1400c4; */
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+.notes_showcase .author-info div span:nth-child(n+2) {
+    font-size: 0.85vw;
+}
+
+.notes_showcase .note-content h2,
+.notes_showcase .video-container h2 {
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.notes_showcase .note-content p {
+    text-indent: 2em;
+    /* 使用em单位进行缩进 */
+}
+
+.notes_showcase .video-container p {
+    font-size: 1vw;
+}
+
+.notes_showcase .video-container {
+    margin-top: 2vw;
+}
+
+.notes_showcase .video-container video {
+    margin-left: 8vw;
+    background-color: #ccc;
+}
+
+.notes_showcase .scroll-buttons .scroll-button-left {
+    background-color: #00bf65;
+    position: absolute;
+    top: 65%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.notes_showcase .scroll-buttons .scroll-button-right {
+    background-color: #00bf65;
+    position: absolute;
+    top: 65%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.notes_showcase .scroll-buttons button {
+    background-color: #fff;
+    border: 0.1vw solid #ccc;
+    /* padding: 0.5vw; */
+    /* margin-bottom: 0.5vw; */
+    height: 6vw;
+    font-size: 3vw;
+    cursor: pointer;
+
+}
+
+.notes_showcase .scroll-buttons button:hover {
+    background-color: #f0f0f0;
+    font-weight: 600;
+}
+
+
+/* =================== perimeter_show 游周边部分展示 ================*/
+.column .perimeter_show {
+    /* background-color: antiquewhite; */
+    width: 89.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 4vw auto 0;
+}
+
+.column .perimeter_show .sightseeing_spots {
+    /* background-color: #7044a7; */
+    margin: 0.2vw 0;
+    /* padding: 0 0.5vw; */
+    box-sizing: border-box;
+}
+
+.column .perimeter_show .sightseeing_spots span:first-child {
+    cursor: pointer;
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-right: 5vw;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.column .perimeter_show .sightseeing_spots span:nth-child(n+2) {
+    /* background-color: rebeccapurple; */
+    margin-right: 2vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 0.6vw 0;
+}
+
+.column .perimeter_show .sightseeing_spots span:nth-child(2) {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .perimeter_show .sightseeing_spots span:nth-child(n+2):hover {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .perimeter_show .attractions {
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38vw;
+}
+
+.column .perimeter_show .attractions .attractions_list {
+    /* background-color: burlywood; */
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0.4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest {
+    /* background-color: #7044a7; */
+    width: 24%;
+    height: 46.5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.7vw 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    /* 悬停时更深的阴影 */
+    opacity: 0.8;
+    /* 悬停时的透明度 */
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .address {
+    position: absolute;
+    background-color: rgba(0, 191, 101, 0.8);
+    top: 0;
+    padding: 0.2vw;
+    font-size: 1vw;
+    z-index: 2;
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price {
+    width: 100%;
+    height: 100%;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    /* 溢出隐藏 */
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img {
+    width: 100%;
+    height: 10vw;
+    transition: transform 0.6s;
+    overflow: hidden;
+    /* 添加过渡效果 */
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img:hover {
+    transform: scale(1.1);
+    /* 悬停时放大1.1倍 */
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5vw 0 0;
+    box-sizing: border-box;
+    border: #e4e4e4 0.1vw solid;
+    border-top: none;
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_name {
+    /* background-color: plum; */
+    /* width: 60%; */
+    font-size: 1.2vw;
+    /* font-weight: 600; */
+    padding: 0 0.5vw 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* 显示两行 */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    /* 允许文本换行 */
+    text-overflow: ellipsis;
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price {
+    font-size: 1.5vw;
+    color: #ff5346;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5vw;
+    /* background-color: #00bf65; */
+    box-sizing: border-box;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 文本不换行 */
+    text-overflow: ellipsis;
+    /* 可选，显示省略号 */
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price span:first-child {
+    font-size: 1vw;
+    color: grey;
+}
+
+.column .perimeter_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price>span:first-child:hover {
+    font-weight: 600;
+}
+
+.column .perimeter_show .attractions .more_perimeter {
+    width: 20%;
+    height: 91%;
+    margin-left: 2vw;
+    /* margin-top: 1vw; */
+    border-top: #00bf65 solid 0.2vw;
+    background-color: #f0fffa;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.column .perimeter_show .attractions .more_perimeter .hot_city {
+    /* background-color: fuchsia; */
+    height: 50%;
+}
+
+.column .perimeter_show .attractions .more_perimeter .hot_city .city_title {
+    height: 20%;
+    font-size: 1vw;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding-left: 1vw;
+    margin: 0.5vw 0;
+}
+
+.column .perimeter_show .attractions .more_perimeter .hot_city .city_name {
+    /* background-color: #00bf65; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0 1vw 0.5vw;
+}
+
+.column .perimeter_show .attractions .more_perimeter .hot_city .city_name span {
+    /* background-color: yellow; */
+    cursor: pointer;
+    margin-right: 1vw;
+    font-size: 0.95vw;
+    color: gray;
+    overflow: hidden;
+}
+
+.column .perimeter_show .attractions .more_perimeter .hot_city .city_name span:hover {
+    font-weight: 600;
+}
+
+/* ======================= china_show 游中国部分展示 ================*/
+.column .china_show {
+    /* background-color: antiquewhite; */
+    width: 89.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 4vw auto 0;
+}
+
+.column .china_show .sightseeing_spots {
+    /* background-color: #7044a7; */
+    margin: 0.2vw 0;
+    /* padding: 0 0.5vw; */
+    box-sizing: border-box;
+}
+
+.column .china_show .sightseeing_spots span:first-child {
+    cursor: pointer;
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin-right: 5vw;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.column .china_show .sightseeing_spots span:nth-child(n+2) {
+    /* background-color: rebeccapurple; */
+    margin-right: 2vw;
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 0.6vw 0;
+}
+
+.column .china_show .sightseeing_spots span:nth-child(2) {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .china_show .sightseeing_spots span:nth-child(n+2):hover {
+    color: #00bf65;
+    font-weight: 600;
+    border-bottom: #00bf65 solid 0.2vw;
+}
+
+.column .china_show .attractions {
+    /* background-color: palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+}
+
+.column .china_show .attractions .attractions_list {
+    /* background-color: burlywood; */
+    width: 80%;
+    list-style-type: none;
+    padding: 0;
+    margin-right: 0.4vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.column .china_show .attractions .attractions_list .manifest {
+    /* background-color: #7044a7; */
+    width: 24%;
+    height: 46.5%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.7vw 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.column .china_show .attractions .attractions_list .manifest:hover {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    /* 悬停时更深的阴影 */
+    opacity: 0.8;
+    /* 悬停时的透明度 */
+}
+
+.column .china_show .attractions .attractions_list .manifest .manifest_img_name_price {
+    width: 100%;
+    height: 100%;
+    /* background-color: gold; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    /* 溢出隐藏 */
+}
+
+.column .china_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img {
+    width: 100%;
+    height: 13.2vw;
+    transition: transform 0.6s;
+    overflow: hidden;
+    /* 添加过渡效果 */
+}
+
+.column .china_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_img:hover {
+    transform: scale(1.2);
+    /* 悬停时放大1.1倍 */
+}
+
+.column .china_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.5vw 0 0;
+    box-sizing: border-box;
+    /* border: #e4e4e4 0.1vw solid; */
+    /* background-color: #00bf65; */
+    border-top: none;
+    color: white;
+    position: absolute;
+    bottom: 0.5vw;
+    margin-left: 0.5vw;
+}
+
+.column .china_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_name {
+    /* background-color: plum; */
+    /* width: 60%; */
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0 0.5vw 0;
+    overflow: hidden;
+    /* 超出部分隐藏 */
+    white-space: nowrap;
+    /* 文本不换行 */
+    text-overflow: ellipsis;
+    /* 可选，显示省略号 */
+}
+
+
+.column .china_show .attractions .attractions_list .manifest .manifest_img_name_price .manifest_name_price .hotels_price span:first-child {
+    font-size: 1vw;
+    color: white;
+    margin-left: 0.5vw;
+}
+
+.column .china_show .attractions .more_hotels {
+    width: 20%;
+    height: 92%;
+    margin-left: 2vw;
+    /* margin-top: 1vw; */
+    /* border-top: #00bf65 solid 0.2vw; */
+    background-color: #f0fffa;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.column .china_show .attractions .more_hotels span {
+    position: absolute;
+    bottom: 0;
+    font-size: 0.8vw;
+    color: #fff;
+    padding: 0.2vw;
+    box-sizing: border-box;
+    background-color: rgba(235, 235, 235, 0.7);
+}
+
+.column .china_show .attractions .more_hotels .advertising {
+    transition: transform 0.6s;
+}
+
+.column .china_show .attractions .more_hotels .advertising:hover {
+    transform: scale(1.2);
+}
+
+/* ====== world_show 游世界部分展示 （样式与游中国一致↑↑↑） ========*/
+
+/* ===================== serve_show 旅行服务部分展示 ================*/
+.column .serve_show {
+    /* background-color: #1400c4; */
+    width: 89.5%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vw;
+}
+
+.column .serve_show .serve {
+    /* background-color: #00bf65; */
+    font-size: 2.5vw;
+    font-weight: 600;
+    margin: 1vw 0;
+    font-family: "FZSTK";
+    src: url(font/FZSTK.TTF);
+}
+
+.column .serve_show .serves {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1vw;
+}
+
+.column .serve_show .serves .outbound_travel,
+.column .serve_show .serves .visa,
+.column .serve_show .serves .insurance {
+    /* background-color: yellow; */
+    width: 33.3%;
+    height: 7.5vw;
+    display: flex;
+    align-items: center;
+    padding-left: 2vw;
+    box-sizing: border-box;
+    border: #e4e4e4 solid 0.1vw;
+    cursor: pointer;
+    /* margin-right: 3vw; */
+}
+
+.column .serve_show .serves .outbound_travel:hover,
+.column .serve_show .serves .visa:hover,
+.column .serve_show .serves .insurance:hover {
+    box-shadow: 0px 0.1vw 0.5vw rgba(0, 0, 0, 0.3);
+    /* 水平偏移量，垂直偏移量，模糊半径，颜色 */
+}
+
+.column .serve_show .serves .visa {
+    margin: 0 4vw;
+}
+
+.column .serve_show .serves .outbound_travel .travel_img,
+.column .serve_show .serves .visa .visa_img,
+.column .serve_show .serves .insurance .insurance_img {
+    width: 18%;
+}
+
+.column .serve_show .serves .outbound_travel .serve_title_describe,
+.column .serve_show .serves .visa .visa_title_describe,
+.column .serve_show .serves .insurance .insurance_title_describe {
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.column .serve_show .serves .outbound_travel span:first-child,
+.column .serve_show .serves .visa span:first-child,
+.column .serve_show .serves .insurance span:first-child {
+    /* background-color: #7044a7; */
+    font-size: 1.6vw;
+}
+
+.column .serve_show .serves .outbound_travel span:last-child,
+.column .serve_show .serves .visa span:last-child,
+.column .serve_show .serves .insurance span:last-child {
+    font-size: 1vw;
+}
+
+/* =============== bottom底部最后部分 ================== */
+.bottom {
+    background-color: palegoldenrod;
+    width: 100%;
+    /* height: 50vw; */
+    margin: 3vw auto 1vw;
+}
+
+.bottom .merit {
+    background-color: #f5f5f5;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.6vw 3vw;
+    box-sizing: border-box;
+}
+
+.bottom .merit1,
+.merit2,
+.merit3,
+.merit4 {
+    /* background-color: violet; */
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom .merit img {
+    width: 15%;
+}
+
+.bottom .merit span {
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+.bottom .merit .vertical {
+    background-color: #e4e4e4;
+    width: 0.15vw;
+}
+
+.bottom .contact-info {
+    /* height: 15vw; */
+    background-color: #484848;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 8vw 0vw 4vw;
+}
+
+.bottom .contact-info .contact-left {
+    /* background-color: #00bf65; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    padding-left: 5vw;
+}
+
+.bottom .contact-info .contact-left .contact-item {
+    /* background-color: darkblue; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 1vw;
+}
+
+.bottom .contact-info .contact-left img {
+    width: 3.5vw;
+    border-radius: 50%;
+}
+
+.bottom .contact-info .contact-left span {
+    font-size: 1vw;
+    font-weight: 600;
+    color: white;
+    margin-left: 0.5vw;
+}
+
+.bottom .contact-info .contact-middle,
+.bottom .contact-info .contact-right,
+.bottom .contact-info .contact-app,
+.bottom .contact-info .app-download {
+    /* background-color: #00bf65; */
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.bottom .contact-info .contact-middle div:first-child,
+.bottom .contact-info .contact-right div:first-child,
+.bottom .contact-info .contact-app div:first-child,
+.bottom .contact-info .app-download div:first-child {
+    /* background-color: #7044a7; */
+    margin-bottom: 1vw;
+    font-size: 1.15vw;
+    color: white;
+    font-weight: 600;
+}
+
+.bottom .contact-info .contact-middle div:nth-child(n+2),
+.bottom .contact-info .contact-right div:nth-child(n+2),
+.bottom .contact-info .contact-app div:nth-child(n+2),
+.bottom .contact-info .app-download div:nth-child(n+2) {
+    /* background-color: #00bf65; */
+    height: 2vw;
+    font-size: 0.95vw;
+    color: #dddddd;
+}
+
+.bottom .contact-info .contact-middle div:nth-child(n+2) span,
+.bottom .contact-info .contact-right div:nth-child(n+2) span,
+.bottom .contact-info .contact-app div:nth-child(n+2) span,
+.bottom .contact-info .app-download div:nth-child(n+2) span {
+    /* background-color: red; */
+    /* box-sizing: border-box; */
+    cursor: pointer;
+}
+
+.bottom .contact-info .app-download img {
+    width: 70%;
+    margin-bottom: 1vw;
+    cursor: pointer;
+}
+
+.bottom .additional-info {
+    background-color: #484848;
+    padding: 2vw;
+}
+
+.bottom .additional-info .long_vertical {
+    width: 89.5%;
+    height: 0.1vw;
+    background-color: #969696;
+    margin: 0 auto 2vw;
+}
+
+.bottom .additional-info div:nth-child(n+2) {
+    /* background-color: yellow; */
+    width: 89.5%;
+    margin: 1vw auto 0;
+    font-size: 1vw;
+    color: #969696;
+}
+
+.bottom .additional-info div:nth-child(n+2) span {
+    cursor: pointer;
+}
+
+.bottom .copyright {
+    background-color: #3c3c3c;
+    padding: 1vw 7vw;
+}
+
+.bottom .copyright .copyright-info div {
+    /* background-color: #00bf65; */
+    margin: 0.7vw 0;
+    font-size: 0.8vw;
+    opacity: 0.85;
+    color: #969696;
+}
+
+.bottom .copyright .copyright-info .empty-span {
+    /* background-color: #00bf65; */
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+}
+
+.bottom .copyright .copyright-info .empty-span img:nth-child(1) {
+    width: 20%;
+    opacity: 0.7;
+    cursor: pointer;
+    /* background-color: purple; */
+}
+
+.bottom .copyright .copyright-info .empty-span img:nth-child(2) {
+    /* background-color: #1400c4; */
+    width: 8.5%;
+    opacity: 0.7;
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+
+.bottom .copyright .copyright-info .empty-span img:nth-child(3) {
+    width: 2.5%;
+    opacity: 0.7;
+    margin-left: 0.5vw;
+    cursor: pointer;
+}
+
+/* =================小导航栏==================== */
+.sidebar {
+    width: 4vw;
+    position: fixed;
+    left: 0.5vw;
+    top: 12vw;
+    /* 初始状态隐藏小导航栏 */
+    transition: top 0.3s ease;
+    background-color: #f5f5f5;
+    border: 0.1vw solid #ccc;
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    opacity: 0.8;
+    z-index: 1000;
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 1vw;
+    height: 3.2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s;
+}
+
+.sidebar a:nth-child(n+2) {
+    border-top: solid 0.1vw white;
+    padding-top: 0.3vw;
+}
+
+.sidebar a:hover {
+    background-color: #fff;
+    color: #808080;
+    font-size: 1.2vw;
+    font-weight: 600;
+}
+
+.sidebar a:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    padding-bottom: 0.5vw;
+}
+
+.sidebar img {
+    width: 2vw;
+    transform: rotate(180deg);
+}
+
+.sidebar img:hover {
+    transform: scale(1.2);
+    transform: rotate(180deg);
+}
+
+.content {
+    margin-left: 200px;
+    /* 留出小导航栏的空间 */
+    padding: 20px;
+}
